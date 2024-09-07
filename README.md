@@ -7,12 +7,15 @@ Cプログラムを簡単にコンパイルして実行するためのBashスク
 
 1. スクリプトに実行権限を与えます：
 ```bash
+cd cc-alias-script
+
 chmod +x compile_run.sh
 chmod +x compile_run_w3.sh
 ```
 
 2. `.zshrc`ファイルにエイリアスを追加します：
-コマンド`cx`とディレクトリ`~/path/to/`はお好きなものを設定して下さい。
+   コマンド`cx`はお好きなものを設定して下さい。
+   ディレクトリ`~/path/to/`はクローンした場所に変更してください。
 ```bash
 echo "alias cx='~/path/to/compile_run.sh'" >> ~/.zshrc
 echo "alias cwx='~/path/to/compile_run_w3.sh'" >> ~/.zshrc
@@ -31,8 +34,11 @@ source ~/.zshrc
 
 ## 使い方
 引数なしで実行するとカレントディレクトリのすべての.cファイルをコンパイルして実行します。
+
 ファイル名を指定すると特定のファイルのみをコンパイルして実行します。
+
 コマンドライン引数にも対応しており、複数の引数を渡すことが可能です。
+
 例:
 ```sh
 cx example.c arg1 arg2 arg3
