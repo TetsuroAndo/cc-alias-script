@@ -14,7 +14,9 @@ chmod +x compile_run_w3.sh
 ```
 
 2. `.zshrc`ファイルにエイリアスを追加します：
+
    コマンド`cx`はお好きなものを設定して下さい。
+
    ディレクトリ`~/path/to/`はクローンした場所に変更してください。
 ```bash
 echo "alias cx='~/path/to/compile_run.sh'" >> ~/.zshrc
