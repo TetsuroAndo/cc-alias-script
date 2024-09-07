@@ -4,7 +4,7 @@ compile_and_run() {
 	local source_file="$1"
     shift
     local output_file="/tmp/${source_file%.c}.out"
-    cc -o "$output_file" "$source_file"
+    cc -Wall -Wextra -Werror -o "$output_file" "$source_file"
     "$output_file" "$@"
     rm "$output_file"
 }
