@@ -12,6 +12,7 @@ chmod +x compile_run_w3.sh
 ```
 
 2. `.zshrc`ファイルにエイリアスを追加します：
+コマンド`cx`とディレクトリ`~/path/to/`はお好きなものを設定して下さい。
 ```bash
 echo "alias cx='~/path/to/compile_run.sh'" >> ~/.zshrc
 echo "alias cwx='~/path/to/compile_run_w3.sh'" >> ~/.zshrc
