@@ -31,7 +31,7 @@ source ~/.zshrc
 
 ## スクリプトの違い
 
-- `compile_run.sh`: 標準的なコンパイルオプションを使用します。
+- `compile_run.sh`: オプションを指定せずに`cc`でコンパイルしています。
 - `compile_run_w3.sh`: `-Wall -Wextra -Werror`オプションを使用して、より厳格なコンパイルを行います。
 
 ## 使い方
