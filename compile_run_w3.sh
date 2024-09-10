@@ -3,7 +3,7 @@ set -e
 compile_and_run() {
 	local source_file="$1"
     shift
-    local output_file="/tmp/${source_file%.c}.out"
+    local output_file="/tmp/$(basename "${source_file%.c}").out"
     cc -Wall -Wextra -Werror -o "$output_file" "$source_file"
     "$output_file" "$@"
     rm "$output_file"
