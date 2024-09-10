@@ -46,5 +46,6 @@ cx example.c arg1 arg2 arg3
 
 ### 初期設定のコマンド
 `cx`が `-Wall -Wextra -Werror`オプションを使用してコンパイルします。
+
 `ccx` がオプションを指定せずに`cc`でコンパイルしています。
 
