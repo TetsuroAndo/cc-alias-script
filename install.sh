@@ -5,6 +5,4 @@ current_dir=$(pwd)
 echo "alias ccx='$current_dir/compile_run.sh'" >> ~/.zshrc
 echo "alias cx='$current_dir/compile_run_w3.sh'" >> ~/.zshrc
 
-source ~/.zshrc
-
 echo "install success"
