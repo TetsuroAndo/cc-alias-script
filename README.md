@@ -17,12 +17,15 @@ chmod +x install.sh
 ./install.sh
 ```
 
-3. install successと表示されたら成功です。
+3. install successと表示されたら成功です：
 ```sh
 $ ./install.sh
 install success
 ```
-
+4. ターミナルを再起動または下記のコマンドを実行して下さい：
+```sh
+source ~/.zshrc
+```
 
 ## スクリプトの違い
 
@@ -40,3 +43,8 @@ install success
 ```sh
 cx example.c arg1 arg2 arg3
 ```
+
+### 初期設定のコマンド
+`cx`が `-Wall -Wextra -Werror`オプションを使用してコンパイルします。
+`ccx` がオプションを指定せずに`cc`でコンパイルしています。
+
