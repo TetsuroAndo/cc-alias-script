@@ -23,4 +23,3 @@ else
     shift
     compile_and_run "$SOURCE_FILE" "$@"
 fi
-
